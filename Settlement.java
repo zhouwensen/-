@@ -30,8 +30,8 @@ public class Settlement {
                 sum += commodity.getKilogram() * commodity.getMoney();
             }
         }
-        //判断金额，大于100则进行满减
-        if (sum > 100) {
+        //判断金额，大于等于100则进行满减
+        if (sum >= 100) {
             System.out.println("购买商品总金额为：" + (sum - 10) + "元");
         } else {
             System.out.println("购买商品总金额为：" + sum + "元");
